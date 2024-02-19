@@ -1,1 +1,1 @@
-Uesr manual
+User manual
