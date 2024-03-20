@@ -1,0 +1,28 @@
+import java.util.*;
+class PushPopEx
+{
+public static void main(String args[])
+{
+Stack st=new Stack();
+st.push("Saudi");
+st.push("Brazil");
+st.push("Canada");
+st.push("France");
+st.push("Mexico");
+st.push("Russia");
+st.push("Sweden");
+st.push("Brazil");
+st.push("Turkey");
+st.push("Dubai");
+System.out.println(st);
+System.out.println("st.size()=" +st.size());
+System.out.println("st.peek()=" +st.peek());
+System.out.println("st.search(Brazil)="+st.search("Brazil"));
+System.out.println("st.pop()=" +st.pop());
+System.out.println("st.pop()=" +st.pop());
+System.out.println(st);
+System.out.println("st.size()=" +st.size());
+System.out.println("st.peek()=" +st.peek());
+System.out.println("st.search(Brazil)="+st.search("Brazil"));
+}
+}
