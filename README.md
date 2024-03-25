@@ -1,9 +1,10 @@
 User manual
+We begin to register the username, email and password.
+
 
 project scope
 -access the location, Google maps, and bank account, and network or cell network.
 -Form factor adaptability: The apps should function well on devices of all standard form factors.
-
 
  project out of scope   
 -Access to Photos
