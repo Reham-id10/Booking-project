@@ -1,4 +1,5 @@
 User manual
+
 We begin to register the username, email and password.
 
 
