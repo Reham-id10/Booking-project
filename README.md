@@ -1,6 +1,7 @@
 User manual
 
 We begin to register the username, email and password.
+Then book the desired flight and fill  out the information.
 
 
 project scope
