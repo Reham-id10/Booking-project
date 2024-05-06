@@ -1,1 +1,51 @@
+@Composable
+fun Last(modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier
+                .requiredWidth(width = 360.dp)
+                .requiredHeight(height = 800.dp)
+                .background(color = Color(0xff94bff0).copy(alpha = 0.49f))
+        ) {
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 13.dp,
+                                    y = 689.dp)
+                        .requiredWidth(width = 165.dp)
+                        .requiredHeight(height = 50.dp)
+                        .clip(shape = RoundedCornerShape(20.dp))
+                        .background(color = Color(0xff4079bd)))
+        Text(
+            textAlign = TextAlign.Center,
+            text = buildAnnotatedString {
+    withStyle(style = SpanStyle(
+        color = Color.White,
+        fontSize = 16.sp)) {append("Back to home page")}
+    withStyle(style = SpanStyle(
+        color = Color.White,
+        fontSize = 32.sp)) {append(" ")}},
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 13.dp,
+                                    y = 689.dp)
+                        .requiredWidth(width = 167.dp)
+                        .requiredHeight(height = 54.dp))
+        Text(
+            text = "The flight has been\n booked successfully\n\n thank you",
+            color = Color.Black,
+            textAlign = TextAlign.Center,
+            style = MaterialTheme.typography.headlineLarge,
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 29.dp,
+                                    y = 253.dp)
+                        .requiredWidth(width = 302.dp)
+                        .requiredHeight(height = 187.dp))
+        }
+ }
 
+@Preview(widthDp = 360, heightDp = 800)
+@Composable
+private fun LastPreview() {
+    Last(Modifier)
+ }
