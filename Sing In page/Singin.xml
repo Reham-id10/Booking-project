@@ -1,1 +1,152 @@
-hh
+@Composable
+fun SingIn(modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier
+                .requiredWidth(width = 360.dp)
+                .requiredHeight(height = 800.dp)
+                .background(color = Color(0xff94bff0).copy(alpha = 0.49f))
+        ) {
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 8.dp,
+                                    y = 389.dp)
+                        .requiredWidth(width = 347.dp)
+                        .requiredHeight(height = 291.dp)
+                        .clip(shape = RoundedCornerShape(50.dp))
+                        .background(color = Color(0xff4079bd)))
+        Image(
+            painter = painterResource(id = R.drawable.img_41),
+            contentDescription = "4 1",
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 14.dp,
+                                    y = 68.dp)
+                        .requiredWidth(width = 332.dp)
+                        .requiredHeight(height = 205.dp)
+                        .clip(shape = RoundedCornerShape(40.dp)))
+        Text(
+            text = "User name",
+            color = Color.Black,
+            textAlign = TextAlign.Center,
+            style = TextStyle(
+                        fontSize = 15.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 18.dp,
+                                    y = 501.dp))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 105.dp,
+                                    y = 423.dp)
+                        .requiredWidth(width = 215.dp)
+                        .requiredHeight(height = 36.dp)
+                        .background(color = Color(0xffd9d9d9)))
+        Text(
+            text = "Password",
+            color = Color.Black,
+            textAlign = TextAlign.Center,
+            style = TextStyle(
+                        fontSize = 15.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 18.dp,
+                                    y = 614.dp))
+        Text(
+            text = "The age",
+            color = Color.Black,
+            textAlign = TextAlign.Center,
+            style = TextStyle(
+                        fontSize = 15.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 24.dp,
+                                    y = 556.dp))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 105.dp,
+                                    y = 493.dp)
+                        .requiredWidth(width = 215.dp)
+                        .requiredHeight(height = 36.dp)
+                        .background(color = Color(0xffd9d9d9)))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 105.dp,
+                                    y = 548.dp)
+                        .requiredWidth(width = 215.dp)
+                        .requiredHeight(height = 36.dp)
+                        .background(color = Color(0xffd9d9d9)))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 101.dp,
+                                    y = 606.dp)
+                        .requiredWidth(width = 215.dp)
+                        .requiredHeight(height = 36.dp)
+                        .background(color = Color(0xffd9d9d9)))
+        Text(
+            text = "SING IN",
+            color = Color.Black,
+            style = MaterialTheme.typography.headlineSmall,
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 134.dp,
+                                    y = 354.dp)
+                        .requiredWidth(width = 149.dp)
+                        .requiredHeight(height = 35.dp))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 110.dp,
+                                    y = 719.dp)
+                        .requiredWidth(width = 143.dp)
+                        .requiredHeight(height = 42.dp)
+                        .clip(shape = RoundedCornerShape(30.dp))
+                        .background(color = Color(0xff807a7a)))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 110.dp,
+                                    y = 719.dp)
+                        .requiredWidth(width = 143.dp)
+                        .requiredHeight(height = 42.dp)
+                        .clip(shape = RoundedCornerShape(30.dp))
+                        .background(color = Color(0xff4079bd)))
+        Text(
+            text = " LONG IN",
+            color = Color.Black,
+            style = TextStyle(
+                        fontSize = 16.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 149.dp,
+                                    y = 710.dp))
+        Text(
+            text = "OR",
+            color = Color.Black,
+            style = TextStyle(
+                        fontSize = 16.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 169.dp,
+                                    y = 689.dp))
+        Text(
+            text = "Email or\n phone num",
+            color = Color.Black,
+            style = TextStyle(
+                        fontSize = 15.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 18.dp,
+                                    y = 426.dp))
+        }
+ }
+
+@Preview(widthDp = 360, heightDp = 800)
+@Composable
+private fun SingInPreview() {
+    SingIn(Modifier)
+ }
