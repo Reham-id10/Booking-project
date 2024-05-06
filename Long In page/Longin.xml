@@ -1,1 +1,96 @@
-hh
+@Composable
+fun LongIn(modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier
+                .requiredWidth(width = 360.dp)
+                .requiredHeight(height = 800.dp)
+                .background(color = Color(0xff94bff0).copy(alpha = 0.49f))
+        ) {
+        Image(
+            painter = painterResource(id = R.drawable.img_41),
+            contentDescription = "4 1",
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 14.dp,
+                                    y = 66.dp)
+                        .requiredWidth(width = 332.dp)
+                        .requiredHeight(height = 205.dp)
+                        .clip(shape = RoundedCornerShape(40.dp)))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 6.dp,
+                                    y = 393.dp)
+                        .requiredWidth(width = 347.dp)
+                        .requiredHeight(height = 291.dp)
+                        .clip(shape = RoundedCornerShape(50.dp))
+                        .background(color = Color(0xff4079bd)))
+        Text(
+            text = " LONG IN",
+            color = Color.Black,
+            style = MaterialTheme.typography.headlineSmall,
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 130.dp,
+                                    y = 331.dp))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 100.dp,
+                                    y = 467.dp)
+                        .requiredWidth(width = 215.dp)
+                        .requiredHeight(height = 36.dp)
+                        .background(color = Color(0xffd9d9d9)))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 100.dp,
+                                    y = 568.dp)
+                        .requiredWidth(width = 215.dp)
+                        .requiredHeight(height = 36.dp)
+                        .background(color = Color(0xffd9d9d9)))
+        Text(
+            text = "Email or\n phone num",
+            color = Color.Black,
+            style = TextStyle(
+                        fontSize = 15.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 14.dp,
+                                    y = 463.dp))
+        Text(
+            text = "Password",
+            color = Color.Black,
+            textAlign = TextAlign.Center,
+            style = TextStyle(
+                        fontSize = 15.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 17.dp,
+                                    y = 576.dp))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 108.dp,
+                                    y = 716.dp)
+                        .requiredWidth(width = 143.dp)
+                        .requiredHeight(height = 42.dp)
+                        .clip(shape = RoundedCornerShape(30.dp))
+                        .background(color = Color(0xff4079bd)))
+        Text(
+            text = "DONE",
+            color = Color.Black,
+            style = TextStyle(
+                        fontSize = 16.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 158.dp,
+                                    y = 726.dp))
+        }
+ }
+
+@Preview(widthDp = 360, heightDp = 800)
+@Composable
+private fun LongInPreview() {
+    LongIn(Modifier)
+ }
