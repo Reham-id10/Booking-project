@@ -1,1 +1,153 @@
-hh
+@Composable
+fun Info(modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier
+                .requiredWidth(width = 360.dp)
+                .requiredHeight(height = 800.dp)
+                .background(color = Color(0xff94bff0).copy(alpha = 0.49f))
+        ) {
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 13.dp,
+                                    y = 86.dp)
+                        .requiredWidth(width = 333.dp)
+                        .requiredHeight(height = 509.dp)
+                        .clip(shape = RoundedCornerShape(40.dp))
+                        .background(color = Color(0xff4079bd)))
+        Text(
+            text = "Complete your information",
+            color = Color.Black,
+            style = MaterialTheme.typography.headlineSmall,
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 29.dp,
+                                    y = 45.dp))
+        Text(
+            text = "First and \nlast Name",
+            color = Color.White,
+            style = TextStyle(
+                        fontSize = 20.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 29.dp,
+                                    y = 121.dp))
+        Text(
+            text = "ID Num",
+            color = Color.White,
+            style = TextStyle(
+                        fontSize = 20.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 29.dp,
+                                    y = 215.dp))
+        Text(
+            text = "Card num",
+            color = Color.White,
+            style = TextStyle(
+                        fontSize = 20.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 29.dp,
+                                    y = 280.dp))
+        Text(
+            text = "Departure\n station",
+            color = Color.White,
+            style = TextStyle(
+                        fontSize = 20.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 27.dp,
+                                    y = 350.dp))
+        Text(
+            text = "Phone \nnum",
+            color = Color.White,
+            style = TextStyle(
+                        fontSize = 20.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 29.dp,
+                                    y = 445.dp))
+        Text(
+            text = "Email",
+            color = Color.White,
+            style = TextStyle(
+                        fontSize = 20.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 37.dp,
+                                    y = 516.dp))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 121.dp,
+                                    y = 121.dp)
+                        .requiredWidth(width = 215.dp)
+                        .requiredHeight(height = 48.dp)
+                        .background(color = Color(0xffd9d9d9)))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 119.dp,
+                                    y = 209.dp)
+                        .requiredWidth(width = 215.dp)
+                        .requiredHeight(height = 36.dp)
+                        .background(color = Color(0xffd9d9d9)))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 121.dp,
+                                    y = 268.dp)
+                        .requiredWidth(width = 215.dp)
+                        .requiredHeight(height = 36.dp)
+                        .background(color = Color(0xffd9d9d9)))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 121.dp,
+                                    y = 516.dp)
+                        .requiredWidth(width = 215.dp)
+                        .requiredHeight(height = 36.dp)
+                        .background(color = Color(0xffd9d9d9)))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 121.dp,
+                                    y = 352.dp)
+                        .requiredWidth(width = 215.dp)
+                        .requiredHeight(height = 48.dp)
+                        .background(color = Color(0xffd9d9d9)))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 119.dp,
+                                    y = 445.dp)
+                        .requiredWidth(width = 215.dp)
+                        .requiredHeight(height = 48.dp)
+                        .background(color = Color(0xffd9d9d9)))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 111.dp,
+                                    y = 641.dp)
+                        .requiredWidth(width = 138.dp)
+                        .requiredHeight(height = 50.dp)
+                        .clip(shape = RoundedCornerShape(20.dp))
+                        .background(color = Color(0xff4079bd)))
+        Text(
+            text = "DONE",
+            color = Color.White,
+            style = TextStyle(
+                        fontSize = 18.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 156.dp,
+                                    y = 655.dp))
+        }
+ }
+
+@Preview(widthDp = 360, heightDp = 800)
+@Composable
+private fun InfoPreview() {
+    Info(Modifier)
+ }
