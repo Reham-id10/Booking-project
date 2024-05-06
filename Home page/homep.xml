@@ -1,1 +1,165 @@
-hh
+
+@Composable
+fun HomeP(modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier
+                .requiredWidth(width = 360.dp)
+                .requiredHeight(height = 800.dp)
+                .background(color = Color(0xff94bff0).copy(alpha = 0.49f))
+        ) {
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 0.dp,
+                                    y = 88.dp)
+                        .requiredWidth(width = 360.dp)
+                        .requiredHeight(height = 112.dp)
+                        .clip(shape = RoundedCornerShape(2.dp))
+                        .background(color = Color.White)
+            ) {
+            Image(
+                painter = painterResource(id = R.drawable.rectangle9),
+                contentDescription = "Rectangle 9",
+                modifier = Modifier
+                                .requiredWidth(width = 100.dp)
+                                .requiredHeight(height = 112.dp))
+            Text(
+                text = buildAnnotatedString {
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 21.sp)) {append("Flight tickets to Norway\n")}
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 20.sp)) {append("11/5/2024\n")}
+    withStyle(style = SpanStyle(
+        color = Color(0xffc10a0a),
+        fontSize = 16.sp)) {append("$")}
+    withStyle(style = SpanStyle(
+        color = Color(0xffc10a0a),
+        fontSize = 18.sp)) {append("400")}},
+                modifier = Modifier
+                                .align(alignment = Alignment.TopStart)
+                                .offset(x = 101.dp,
+                                                y = 12.dp)
+                                .requiredWidth(width = 234.dp)
+                                .requiredHeight(height = 89.dp))
+            }
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 0.dp,
+                                    y = 258.dp)
+                        .requiredWidth(width = 360.dp)
+                        .requiredHeight(height = 112.dp)
+                        .clip(shape = RoundedCornerShape(2.dp))
+                        .background(color = Color.White)
+            ) {
+            Image(
+                painter = painterResource(id = R.drawable.rectangle9),
+                contentDescription = "Rectangle 9",
+                modifier = Modifier
+                                .requiredWidth(width = 100.dp)
+                                .requiredHeight(height = 112.dp))
+            Text(
+                text = buildAnnotatedString {
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 21.sp)) {append("Flight tickets to S-Korea\n")}
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 20.sp)) {append("14/5/2024\n")}
+    withStyle(style = SpanStyle(
+        color = Color(0xffc10a0a),
+        fontSize = 16.sp)) {append("$")}
+    withStyle(style = SpanStyle(
+        color = Color(0xffc10a0a),
+        fontSize = 18.sp)) {append("550")}},
+                modifier = Modifier
+                                .align(alignment = Alignment.TopStart)
+                                .offset(x = 100.dp,
+                                                y = 12.dp)
+                                .requiredWidth(width = 234.dp)
+                                .requiredHeight(height = 89.dp))
+            }
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 0.dp,
+                                    y = 428.dp)
+                        .requiredWidth(width = 360.dp)
+                        .requiredHeight(height = 112.dp)
+                        .clip(shape = RoundedCornerShape(2.dp))
+                        .background(color = Color.White)
+            ) {
+            Image(
+                painter = painterResource(id = R.drawable.rectangle9),
+                contentDescription = "Rectangle 9",
+                modifier = Modifier
+                                .requiredWidth(width = 100.dp)
+                                .requiredHeight(height = 112.dp))
+            Text(
+                text = buildAnnotatedString {
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 21.sp)) {append("Flight tickets to Japan\n")}
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 20.sp)) {append("12/5/2024\n")}
+    withStyle(style = SpanStyle(
+        color = Color(0xffc10a0a),
+        fontSize = 16.sp)) {append("$")}
+    withStyle(style = SpanStyle(
+        color = Color(0xffc10a0a),
+        fontSize = 18.sp)) {append("600")}},
+                modifier = Modifier
+                                .align(alignment = Alignment.TopStart)
+                                .offset(x = 100.dp,
+                                                y = 11.dp)
+                                .requiredWidth(width = 234.dp)
+                                .requiredHeight(height = 89.dp))
+            }
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 0.dp,
+                                    y = 589.dp)
+                        .requiredWidth(width = 360.dp)
+                        .requiredHeight(height = 112.dp)
+                        .clip(shape = RoundedCornerShape(2.dp))
+                        .background(color = Color.White)
+            ) {
+            Image(
+                painter = painterResource(id = R.drawable.rectangle10),
+                contentDescription = "Rectangle 10",
+                modifier = Modifier
+                                .requiredWidth(width = 100.dp)
+                                .requiredHeight(height = 112.dp))
+            Text(
+                text = buildAnnotatedString {
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 21.sp)) {append("Flight tickets to Kuwait\n")}
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 20.sp)) {append("10/5/2024\n")}
+    withStyle(style = SpanStyle(
+        color = Color(0xffc10a0a),
+        fontSize = 16.sp)) {append("$")}
+    withStyle(style = SpanStyle(
+        color = Color(0xffc10a0a),
+        fontSize = 18.sp)) {append("200")}},
+                modifier = Modifier
+                                .align(alignment = Alignment.TopStart)
+                                .offset(x = 100.dp,
+                                                y = 11.dp)
+                                .requiredWidth(width = 234.dp)
+                                .requiredHeight(height = 89.dp))
+            }
+        }
+ }
+
+@Preview(widthDp = 360, heightDp = 800)
+@Composable
+private fun HomePPreview() {
+    HomeP(Modifier)
+ }
