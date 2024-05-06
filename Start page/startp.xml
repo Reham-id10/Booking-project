@@ -1,1 +1,67 @@
-hh
+@Composable
+fun Start(modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier
+                .requiredWidth(width = 360.dp)
+                .requiredHeight(height = 800.dp)
+                .background(color = Color(0xff94bff0).copy(alpha = 0.49f))
+        ) {
+        Image(
+            painter = painterResource(id = R.drawable.img_1),
+            contentDescription = "1",
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 18.dp,
+                                    y = 246.dp)
+                        .requiredWidth(width = 324.dp)
+                        .requiredHeight(height = 215.dp)
+                        .clip(shape = RoundedCornerShape(50.dp)))
+        Text(
+            text = "HAPVLEING",
+            color = Color.Black,
+            textAlign = TextAlign.Center,
+            style = MaterialTheme.typography.displaySmall,
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 48.dp,
+                                    y = 116.dp))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 93.dp,
+                                    y = 611.dp)
+                        .requiredWidth(width = 174.dp)
+                        .requiredHeight(height = 62.dp)
+                        .clip(shape = RoundedCornerShape(30.dp))
+                        .background(color = Color(0xff4079bd)))
+        Text(
+            text = "START",
+            color = Color.Black,
+            textAlign = TextAlign.Center,
+            style = MaterialTheme.typography.headlineSmall,
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 132.dp,
+                                    y = 614.dp))
+        Text(
+            textAlign = TextAlign.Center,
+            text = buildAnnotatedString {
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 11.sp)) {append("Yo")}
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 12.sp)) {append("ur destination to find the best \nfliying tripse to make speciol moments")}},
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 72.dp,
+                                    y = 498.dp))
+        }
+ }
+
+@Preview(widthDp = 360, heightDp = 800)
+@Composable
+private fun StartPreview() {
+    Start(Modifier)
+ }
+
