@@ -1,1 +1,70 @@
-hh
+@Composable
+fun Sug1(modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier
+                .requiredWidth(width = 360.dp)
+                .requiredHeight(height = 800.dp)
+                .background(color = Color(0xff94bff0).copy(alpha = 0.49f))
+        ) {
+        Text(
+            textAlign = TextAlign.Center,
+            text = buildAnnotatedString {
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 32.sp)) {append("NORWAY\n")}
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 24.sp)) {append("(Oslo)\n")}
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 21.sp)) {append("\n(just go)")}},
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 106.dp,
+                                    y = 203.dp))
+        Text(
+            text = buildAnnotatedString {
+    withStyle(style = SpanStyle(
+        color = Color(0xff4f3b3b),
+        fontSize = 24.sp)) {append("Go date: 11/5/2024\nTravelers: 1 adult\nDegree: Economy\nAirlines: Saudi Airlines\nThe Price: ")}
+    withStyle(style = SpanStyle(
+        color = Color(0xffc10a0a),
+        fontSize = 24.sp)) {append("$400")}},
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 32.dp,
+                                    y = 400.dp)
+                        .requiredWidth(width = 257.dp)
+                        .requiredHeight(height = 275.dp))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 111.dp,
+                                    y = 712.dp)
+                        .requiredWidth(width = 138.dp)
+                        .requiredHeight(height = 50.dp)
+                        .clip(shape = RoundedCornerShape(20.dp))
+                        .background(color = Color(0xff4079bd)))
+        Text(
+            text = "Book the flight",
+            color = Color.White,
+            style = TextStyle(
+                        fontSize = 18.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 118.dp,
+                                    y = 724.dp))
+        Image(
+            painter = painterResource(id = R.drawable.worway1),
+            contentDescription = "worway 1",
+            modifier = Modifier
+                        .requiredWidth(width = 360.dp)
+                        .requiredHeight(height = 180.dp))
+        }
+ }
+
+@Preview(widthDp = 360, heightDp = 800)
+@Composable
+private fun Sug1Preview() {
+    Sug1(Modifier)
+ }
