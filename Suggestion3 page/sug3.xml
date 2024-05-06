@@ -1,1 +1,69 @@
-uu
+@Composable
+fun Sug3(modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier
+                .requiredWidth(width = 360.dp)
+                .requiredHeight(height = 800.dp)
+                .background(color = Color(0xff94bff0).copy(alpha = 0.49f))
+        ) {
+        Image(
+            painter = painterResource(id = R.drawable.japan1),
+            contentDescription = "japan 1",
+            modifier = Modifier
+                        .requiredWidth(width = 360.dp)
+                        .requiredHeight(height = 182.dp))
+        Text(
+            text = buildAnnotatedString {
+    withStyle(style = SpanStyle(
+        color = Color(0xff4f3b3b),
+        fontSize = 24.sp)) {append("Go date: 12/5/2024\nTravelers: 1 adult\nDegree: Economy\nAirlines: Flyadeal\nThe Price: ")}
+    withStyle(style = SpanStyle(
+        color = Color(0xffc10a0a),
+        fontSize = 24.sp)) {append("$600")}},
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 38.dp,
+                                    y = 400.dp)
+                        .requiredWidth(width = 257.dp))
+        Text(
+            textAlign = TextAlign.Center,
+            text = buildAnnotatedString {
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 32.sp)) {append("JAPAN\n")}
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 24.sp)) {append("(Tokyo)\n")}
+    withStyle(style = SpanStyle(
+        color = Color.Black,
+        fontSize = 21.sp)) {append("\n(just go)")}},
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 127.dp,
+                                    y = 214.dp))
+        Box(
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 111.dp,
+                                    y = 707.dp)
+                        .requiredWidth(width = 138.dp)
+                        .requiredHeight(height = 50.dp)
+                        .clip(shape = RoundedCornerShape(20.dp))
+                        .background(color = Color(0xff4079bd)))
+        Text(
+            text = "Book the flight",
+            color = Color.White,
+            style = TextStyle(
+                        fontSize = 18.sp),
+            modifier = Modifier
+                        .align(alignment = Alignment.TopStart)
+                        .offset(x = 118.dp,
+                                    y = 720.dp))
+        }
+ }
+
+@Preview(widthDp = 360, heightDp = 800)
+@Composable
+private fun Sug3Preview() {
+    Sug3(Modifier)
+ }
